@@ -6,7 +6,7 @@ const { userAuth } = require('./middleware/auth');
  const cors = require('cors');
 
 app.use(cors({
-  origin: "https://react-1-jade-three.vercel.app", // React frontend URL
+  origin: "https://react-project-nine-snowy.vercel.app", // React frontend URL
   credentials: true,  // Allow cookies and credentials
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],  // Allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"] // Allowed headers
