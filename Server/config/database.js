@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = () => {
      
     mongoose.connect(
-    "mongodb+srv://praveenudayagiri724:PRAVEEN@cluster0.lvusg.mongodb.net/praveendb?retryWrites=true&w=majority&appName=Cluster0"
+    "mongodb+srv://krishnavamsi:lu7kqXRSv7FWYXlU@cluster0.uwfct.mongodb.net/customizationdb?retryWrites=true&w=majority&appName=Cluster0"
 )
 .then(() => {
     console.log('MongoDB connected successfully');
