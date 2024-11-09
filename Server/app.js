@@ -1,3 +1,4 @@
+
 const express = require("express");
 const connectDB = require("./config/database");
 const app = express();
@@ -6,12 +7,9 @@ const { userAuth } = require('./middleware/auth');
  const cors = require('cors');
 
 app.use(cors({
-  origin: "https://react-project-nine-snowy.vercel.app", // React frontend URL
-  credentials: true,  // Allow cookies and credentials
-  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],  // Allowed HTTP methods
-  allowedHeaders: ["Content-Type", "Authorization"] // Allowed headers
+    origin: "https://react-project-nine-snowy.vercel.app/",
+    credentials: true,
 }));
-
 app.use(express.json());
 app.use(cookieParser());
 
@@ -36,7 +34,3 @@ app.get("/", (req, res) => {
 
 module.exports = app;
 connectDB()
-
-
-
-
