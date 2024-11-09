@@ -17,7 +17,7 @@ const productRouter = require("./routes/product");
 const cartRouter = require("./routes/cart");
 
 app.use(cors({
-    origin: "https://react-project-nine-snowy.vercel.app",
+    origin: "https://react-project-front.vercel.app",
     credentials: true,
 }));
 
